@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/manage_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFC609"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/manage_head_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/manage_head_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核结果"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/manage_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            >
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/manage_btn1"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape_managebutton"
+            android:layout_centerInParent="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要建社团"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--    <Button-->
+    <!--        android:id="@+id/manage_btn1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:text="我要建社团"-->
+    <!--        android:textSize="40sp"/>-->
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalCenterActivity"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/person_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@color/titlecolorPrimary">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="个人中心"
+                android:textColor="#FFFFFF"
+                android:textSize="65px"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像"
+            android:textSize="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"></TextView>
+            <clubmanage.ui.CircleImageView
+                android:id="@+id/per_cen_head"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="150px"
+                ></clubmanage.ui.CircleImageView>
+<!--        android:onClick=""-->
+
+
+
+
+<!--        <ImageButton-->
+<!--            android:layout_width="180px"-->
+<!--            android:layout_height="180px"-->
+<!--            android:src="@mipmap/ic_launcher"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="150px"-->
+<!--            android:background="@drawable/button_shape_circle"></ImageButton>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

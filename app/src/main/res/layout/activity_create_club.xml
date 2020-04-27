@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateClub"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/create_club_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/titlecolorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创建社团"
+                    android:textColor="#FFFFFF"
+                    android:textSize="65px"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社团logo"
+            android:textColor="#000000"
+            android:textSize="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"></TextView>
+        <clubmanage.ui.CircleImageView
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@drawable/enrollment"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150px"
+
+            ></clubmanage.ui.CircleImageView>
+        <ImageView
+            android:id="@+id/array_right_logo"
+            android:src="@drawable/arrow_right_grey"
+            android:layout_width="120px"
+            android:textColor="#999999"
+            android:layout_height="120px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"></ImageView>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="社团海报"
+                android:textSize="50px"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"></TextView>
+            <TextView
+                android:id="@+id/poster_path"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="150px"
+                android:text="海报"
+                android:textColor="#999999"
+                android:textSize="40px"
+                android:gravity="center"></TextView>
+            <ImageView
+                android:id="@+id/array_right_poster"
+                android:src="@drawable/arrow_right_grey"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_createclub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/button_create_club"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape3"
+                android:textSize="53px"
+                android:layout_marginBottom="0px"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
