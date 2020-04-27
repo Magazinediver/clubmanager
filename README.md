@@ -18,7 +18,7 @@
 ## 三、软件功能展示
 ### 1.登录注册功能展示
 - a）登录功能
-<img src="https://pic.images.ac.cn/image/5ea674c88ef8b.html" width="50%">
+<img src="./gif/stu/login.gif">
 - b）注册功能
 
 ### 2.页面浏览展示
